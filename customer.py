@@ -99,3 +99,10 @@ print("sales_by_region:")
 for region in sorted(sales_by_region.keys()):
     print(f"{region}: ${sales_by_region[region]:.2f}")
 
+#In Exercise 3 you saw the difference between .get() and bracket notation. 
+# When in real work would you use each one, and what's your rule of thumb for choosing?
+# I would use .get() when a key might be missing and I need a default value, while bracket notation is appropriate when the key should exist and a missing key should raise an error.
+
+#Exercise 8 asked you to build a summary dictionary with a loop. What does this pattern remind you of from Excel, 
+# and why might the Python version be more useful for large datasets?
+# This pattern is similar to Excel's SUMIF or PivotTable functionality, but Python can process large datasets more efficiently and flexibly, especially when the data structure is complex or when custom aggregation logic is needed.
